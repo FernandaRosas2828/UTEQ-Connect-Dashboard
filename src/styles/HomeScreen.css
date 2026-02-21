@@ -1,0 +1,58 @@
+.home-container {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-container {
+  margin-bottom: 50px;
+}
+
+.logo {
+  width: 250px;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 300px;
+}
+
+button {
+  padding: 15px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #1e3a6d;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #162d54;
+}
+
+.btn-secondary {
+  background-color: #5f7db3;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #4c6696;
+}

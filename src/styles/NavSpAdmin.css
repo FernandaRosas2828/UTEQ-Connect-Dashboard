@@ -1,0 +1,206 @@
+/* ============================= */
+/* CONTENEDOR GENERAL */
+/* ============================= */
+
+.spadmin-container {
+  display: flex;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+.spadmin-main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.spadmin-topbar {
+  background-color: #8c8c8c;
+  padding: 12px;
+  text-align: center;
+  color: white;
+}
+
+.spadmin-content-area {
+  flex: 1;
+  background-color: #e5e5e5;
+  padding: 20px;
+}
+
+/* ============================= */
+/* SIDEBAR */
+/* ============================= */
+
+.spadmin-sidebar {
+  width: 240px;
+  background-color: #dcdcdc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px 18px 25px 18px;
+  transition: width 0.3s ease, padding 0.3s ease;
+  position: relative;
+}
+
+.spadmin-sidebar.collapsed {
+  width: 85px;
+  padding: 40px 8px 25px 8px;
+}
+
+/* ============================= */
+/* BOTÓN COLAPSAR */
+/* ============================= */
+
+.spadmin-collapse-btn {
+  position: absolute;
+  top: 18px;
+  right: -14px;
+  background-color: #8c8c8c;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  border: 2px solid white;
+  transition: 0.2s ease;
+}
+
+.spadmin-collapse-btn:hover {
+  transform: scale(1.1);
+  background-color: #707070;
+}
+
+/* ============================= */
+/* PERFIL */
+/* ============================= */
+
+.spadmin-profile-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 45px;
+}
+
+.spadmin-profile-wrapper {
+  position: relative;
+}
+
+.spadmin-profile-img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: 0.3s ease;
+}
+
+.spadmin-sidebar.collapsed .spadmin-profile-img {
+  width: 50px;
+  height: 50px;
+}
+
+/* ============================= */
+/* BOTÓN EDITAR (RESPETADO EXACTAMENTE) */
+/* ============================= */
+
+.spadmin-edit-profile-btn {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: white;
+  border: 2px solid #8c8c8c;
+  width: 50px;              /* 🔥 tamaño original respetado */
+  height: 50px;             /* 🔥 tamaño original respetado */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: 0.2s ease;
+}
+
+.spadmin-edit-profile-btn:hover {
+  transform: scale(1.08);
+}
+
+.spadmin-edit-icon {
+  width: 18px;              /* 🔥 tamaño original respetado */
+  height: 18px;
+  stroke: black;
+  stroke-width: 2.5;
+}
+
+/* ============================= */
+/* MENÚ */
+/* ============================= */
+
+.spadmin-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.spadmin-menu button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #8c8c8c;
+  color: white;
+  border: none;
+  padding: 11px 14px;
+  border-radius: 14px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  justify-content: flex-start;
+}
+
+.spadmin-menu button:hover {
+  background-color: #707070;
+  transform: translateX(3px);
+}
+
+.spadmin-sidebar.collapsed .spadmin-menu button {
+  justify-content: center;
+  padding: 12px;
+}
+
+.spadmin-sidebar.collapsed .spadmin-menu button span {
+  display: none;
+}
+
+/* ============================= */
+/* LOGOUT */
+/* ============================= */
+
+.spadmin-logout {
+  margin-top: 30px;
+}
+
+.spadmin-logout-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #c0392b;
+  color: white;
+  border: none;
+  padding: 11px 14px;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.spadmin-logout-btn:hover {
+  background-color: #a93226;
+}
+
+.spadmin-sidebar.collapsed .spadmin-logout-btn {
+  justify-content: center;
+  padding: 12px;
+}
+
+.spadmin-sidebar.collapsed .spadmin-logout-btn span {
+  display: none;
+}

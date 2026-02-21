@@ -1,0 +1,118 @@
+/* ============================= */
+/* CONTENEDOR GENERAL */
+/* ============================= */
+
+.spadmin-container {
+  display: flex;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ============================= */
+/* SIDEBAR */
+/* ============================= */
+
+.spadmin-sidebar {
+  width: 250px;
+  background-color: #5f7db3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* ============================= */
+/* PERFIL */
+/* ============================= */
+
+.spadmin-profile-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.spadmin-profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* ============================= */
+/* MENU */
+/* ============================= */
+
+.spadmin-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.spadmin-menu button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #2f3a63;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-size: 14px;
+}
+
+.spadmin-menu button:hover {
+  background-color: #1f2747;
+}
+
+/* ============================= */
+/* LOGOUT */
+/* ============================= */
+
+.spadmin-logout {
+  margin-top: 30px;
+}
+
+.spadmin-logout-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #d63c2f;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.spadmin-logout-btn:hover {
+  background-color: #b72e24;
+}
+
+/* ============================= */
+/* MAIN CONTENT */
+/* ============================= */
+
+.spadmin-main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.spadmin-topbar {
+  background-color: #8c8c8c;
+  padding: 5px;
+  text-align: center;
+  color: white;
+}
+
+.spadmin-topbar h1 {
+  font-weight: 500;
+}
+
+.spadmin-content-area {
+  flex: 1;
+  background-color: #e5e5e5;
+}

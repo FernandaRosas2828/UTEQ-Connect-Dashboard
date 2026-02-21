@@ -1,0 +1,171 @@
+/* ============================= */
+/* TOPBAR */
+/* ============================= */
+
+.rutas-topbar {
+  background-color: #2f3a63;
+  padding: 18px;
+  text-align: center;
+}
+
+.rutas-topbar h1 {
+  color: white;
+  font-weight: 600;
+  font-size: 26px;
+}
+
+/* ============================= */
+/* CONTENIDO GENERAL */
+/* ============================= */
+
+.rutas-content {
+  background: #f5f6fa;
+  padding: 30px;
+  min-height: 100vh;
+}
+
+/* ============================= */
+/* MAPA */
+/* ============================= */
+
+.map-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.map-frame {
+  width: 600px;
+  height: 350px;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* ============================= */
+/* TABLA */
+/* ============================= */
+
+.tabla-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Encabezados */
+.tabla-header {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  background: #dcdcdc;
+  padding: 15px 10px;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 4px;
+}
+
+/* Fila vacía */
+.tabla-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+/* Celdas estilo input vacío */
+.input-cell {
+  height: 60px;
+  border: 2px solid #cfcfcf;
+  border-radius: 4px;
+  background: #ffffff;
+}
+.map-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.map-frame {
+  width: 750px;
+  height: 420px;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+/* ============================= */
+/* FILAS */
+/* ============================= */
+
+.tabla-row-datos {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.tabla-row-datos div {
+  background: white;
+  border: 1px solid #cfcfcf;
+  padding: 20px 10px;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* ============================= */
+/* ESTATUS */
+/* ============================= */
+
+.activo {
+  color: black;
+  font-weight: 500;
+}
+
+.inactivo {
+  color: black;
+  font-weight: 500;
+}
+
+/* ============================= */
+/* ACCIONES */
+/* ============================= */
+
+.acciones {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: black;
+  padding: 5px;
+  transition: 0.2s ease;
+}
+
+.btn-icon:hover {
+  transform: scale(1.2);
+}
+/* ============================= */
+/* BOTÓN AGREGAR CENTRADO */
+/* ============================= */
+
+.agregar-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.btn-agregar {
+  background: #2f3a63;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.btn-agregar:hover {
+  background: #1f2747;
+}

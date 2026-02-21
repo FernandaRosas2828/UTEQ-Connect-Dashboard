@@ -1,0 +1,107 @@
+/* Contenedor general */
+.reportes-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+/* Área principal */
+.reportes-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.reportes-header {
+  background-color: #8c8c8c;
+  padding: 25px;
+  text-align: center;
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+/* Contenido */
+.reportes-content {
+  padding: 40px;
+}
+
+/* Tarjetas */
+.reportes-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.reportes-card {
+  background-color: #eeeeee;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.reportes-card:hover {
+  background-color: #e0e0e0;
+  transform: translateY(-3px);
+}
+
+.reportes-card h3 {
+  font-size: 28px;
+  margin: 10px 0;
+}
+
+.reportes-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Detalle eventos */
+.reportes-detalle {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+}
+
+.reportes-detalle-card {
+  background-color: #eeeeee;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.reportes-activo {
+  color: #2e7d32;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.reportes-inactivo {
+  color: #b00020;
+  font-size: 20px;
+  font-weight: bold;
+}
+/* CONTENEDOR DE GRÁFICAS */
+.reportes-graficas {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 30px;
+}
+
+.grafica-box {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+}
+
+.grafica-box h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #444;
+}

@@ -1,0 +1,185 @@
+/* Contenedor general */
+.eventos-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+/* Área principal */
+.eventos-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.eventos-header {
+  background-color: #8c8c8c;
+  padding: 25px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* Área de contenido */
+.eventos-content {
+  padding: 40px;
+}
+
+/* Tabla */
+.eventos-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 10px;
+}
+
+.eventos-table th {
+  background-color: #dcdcdc;
+  padding: 15px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.eventos-table td {
+  background-color: #eeeeee;
+  padding: 15px;
+  text-align: center;
+}
+
+/* Estatus */
+.evento-activo {
+  font-weight: 500;
+  color: #2e7d32;
+}
+
+.evento-inactivo {
+  font-weight: 500;
+  color: #b00020;
+}
+
+/* Acciones */
+.eventos-acciones {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.eventos-btn-icon {
+  border: none;
+  background-color: #e0e0e0;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.2s ease;
+}
+
+.eventos-btn-icon:hover {
+  background-color: #cfcfcf;
+}
+
+.eventos-btn-icon.delete:hover {
+  background-color: #f8caca;
+}
+
+.eventos-btn-icon svg {
+  stroke: #333;
+  transition: 0.2s;
+}
+
+.eventos-btn-icon:hover svg {
+  stroke: #000;
+}
+
+.eventos-btn-icon.delete:hover svg {
+  stroke: #b00020;
+}
+
+/* Botón agregar */
+.eventos-actions-top {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.eventos-btn-agregar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #8c8c8c;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.eventos-btn-agregar:hover {
+  background-color: #7a7a7a;
+}
+
+/* Modal */
+.eventos-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.eventos-modal-container {
+  background: white;
+  width: 400px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.eventos-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.eventos-modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.eventos-modal-body input,
+.eventos-modal-body select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.eventos-modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.eventos-btn-cancelar {
+  background: #ccc;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.eventos-btn-guardar {
+  background: #8c8c8c;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}

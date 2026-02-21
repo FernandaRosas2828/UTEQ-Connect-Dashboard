@@ -1,0 +1,224 @@
+/* =========================
+   CONTENEDOR GENERAL
+========================= */
+
+.met-admin-wrapper {
+  display: flex;
+  height: 100vh;
+  background-color: #f4f6f9;
+}
+
+.met-main-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.met-topbar {
+  background: linear-gradient(135deg, #2f3b63, #1f2747);
+  padding: 25px;
+  text-align: center;
+}
+
+.met-topbar h1 {
+  color: white;
+  margin: 0;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+/* =========================
+   CONTENIDO
+========================= */
+
+.met-content {
+  padding: 40px 60px;
+}
+
+/* =========================
+   TARJETAS KPI
+========================= */
+
+.met-kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.met-card {
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.met-card:hover {
+  transform: translateY(-5px);
+}
+
+.met-card h3 {
+  margin: 15px 0 5px 0;
+  font-size: 28px;
+  color: #2f3b63;
+}
+
+.met-card p {
+  margin: 0;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* =========================
+   TABLA MÉTRICAS
+========================= */
+
+.met-table {
+  width: 100%;
+}
+
+.met-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  gap: 15px;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.met-row div {
+  background: white;
+  padding: 18px;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid #e5e7eb;
+}
+
+.met-header div {
+  background: #e5e7eb;
+  font-weight: 600;
+}
+
+/* =========================
+   PROGRESS BAR
+========================= */
+
+.met-progress-bar {
+  width: 100%;
+  height: 10px;
+  background: #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 6px;
+}
+
+.met-progress-fill {
+  height: 100%;
+  background: #2f3b63;
+  transition: width 0.4s ease;
+}
+
+.met-percent {
+  font-size: 12px;
+  color: #374151;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1000px) {
+  .met-kpi-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .met-row {
+    grid-template-columns: 1fr;
+  }
+}
+/* =========================
+   GRÁFICA
+========================= */
+
+.met-chart-container {
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  margin-bottom: 50px;
+}
+
+.met-chart-container h2 {
+  margin-bottom: 25px;
+  color: #2f3b63;
+}
+/* ===== KPI DESTACADOS ===== */
+
+.highlight {
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: white;
+}
+
+.highlight-gold {
+  background: linear-gradient(135deg, #fbbf24, #f59e0b);
+  color: white;
+}
+
+/* ===== CIRCULAR PROGRESS ===== */
+
+.met-percentage-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.met-percentage-card {
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.circle {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 20px auto;
+}
+
+.circle svg {
+  width: 120px;
+  height: 120px;
+  transform: rotate(-90deg);
+}
+
+.circle svg circle {
+  fill: none;
+  stroke-width: 10;
+  stroke: #e5e7eb;
+  stroke-dasharray: 314;
+}
+
+.circle svg .progress {
+  stroke: #3b82f6;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.6s ease;
+}
+
+.circle .number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 22px;
+  font-weight: bold;
+  color: #1f2937;
+}

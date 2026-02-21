@@ -1,0 +1,183 @@
+/* ============================= */
+/* SIDEBAR */
+/* ============================= */
+
+.sidebar {
+  width: 240px;
+  background-color: #5f7db3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px 18px 25px 18px;
+  transition: width 0.3s ease;
+  position: relative;
+}
+
+.sidebar.collapsed {
+  width: 85px;
+  padding: 40px 8px 25px 8px;
+}
+
+/* ============================= */
+/* BOTÓN COLAPSAR */
+/* ============================= */
+
+.collapse-btn {
+  position: absolute;
+  top: 18px;
+  right: -14px;
+  background-color: #2f3a63;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  z-index: 10;
+  transition: 0.2s ease;
+
+  border: 2px solid white; /* 🔥 nuevo */
+}
+
+.collapse-btn:hover {
+  transform: scale(1.1);
+}
+
+/* ============================= */
+/* PERFIL */
+/* ============================= */
+
+.profile-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 45px;
+}
+
+.profile-wrapper {
+  position: relative;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: 0.3s ease;
+}
+
+/* Imagen pequeña cuando colapsa */
+.sidebar.collapsed .profile-img {
+  width: 48px;
+  height: 48px;
+}
+
+/* ============================= */
+/* BOTÓN EDITAR */
+/* ============================= */
+
+.edit-profile-btn {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: white;
+  border: 2px solid #5f7db3; /* combina con tu sidebar */
+  width: 50px;      /* 🔥 más grande */
+  height: 50px;     /* 🔥 más grande */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transition: 0.2s ease;
+  z-index: 30;
+}
+
+.edit-profile-btn:hover {
+  transform: scale(1.08);
+}
+
+/* Icono */
+
+.edit-icon {
+  width: 20px;   /* 🔥 tamaño real visible */
+  height: 20px;
+  stroke: black;
+  stroke-width: 2.8;
+}
+
+/* ============================= */
+/* MENÚ */
+/* ============================= */
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.menu button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #2f3a63;
+  color: white;
+  border: none;
+  padding: 11px 14px;
+  border-radius: 14px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  justify-content: flex-start;
+}
+
+.menu button:hover {
+  background-color: #25335a;
+  transform: translateX(3px);
+}
+
+/* Centrar iconos cuando está colapsado */
+.sidebar.collapsed .menu button {
+  justify-content: center;
+  padding: 12px;
+}
+
+.sidebar.collapsed .menu button span {
+  display: none;
+}
+
+/* ============================= */
+/* LOGOUT */
+/* ============================= */
+
+.logout {
+  margin-top: 30px;
+}
+
+.logout-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #d63c2f;
+  color: white;
+  border: none;
+  padding: 11px 14px;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.logout-btn:hover {
+  background-color: #b83227;
+}
+
+.sidebar.collapsed .logout-btn {
+  justify-content: center;
+  padding: 12px;
+}
+
+.sidebar.collapsed .logout-btn span {
+  display: none;
+}

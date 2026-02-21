@@ -1,0 +1,251 @@
+/* =========================
+   CONTENEDOR GENERAL
+========================= */
+
+.reg-admin-wrapper {
+  display: flex;
+  height: 100vh;
+  background-color: #f2f2f2;
+}
+
+/* =========================
+   CONTENIDO PRINCIPAL
+========================= */
+
+.reg-main-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+/* =========================
+   HEADER SUPERIOR
+========================= */
+
+.reg-topbar {
+  background-color: #2f3b63;
+  padding: 25px;
+  text-align: center;
+}
+
+.reg-topbar h1 {
+  color: white;
+  font-size: 28px;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* =========================
+   ÁREA INTERNA
+========================= */
+
+.reg-content {
+  padding: 40px 60px;
+}
+
+/* =========================
+   TABLA REGISTROS
+========================= */
+
+.reg-tabla {
+  width: 100%;
+}
+
+.reg-fila {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr 1.5fr 1.5fr;
+  gap: 15px;
+  margin-bottom: 18px;
+  transition: all 0.3s ease;
+}
+
+.reg-fila div {
+  background-color: #e5e5e5;
+  padding: 18px;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid #d1d1d1;
+  font-size: 15px;
+}
+
+.reg-encabezado div {
+  background-color: #d6d6d6;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.reg-fila:not(.reg-encabezado):hover div {
+  background-color: #f0f0f0;
+  transform: scale(1.01);
+}
+
+/* =========================
+   ACCIONES
+========================= */
+
+.reg-acciones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.reg-btn {
+  background-color: #2f3b63;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.reg-btn:hover {
+  background-color: #1f2747;
+  transform: translateY(-1px);
+}
+
+/* ===============================
+   MODAL PROFESIONAL REGISTROS
+================================ */
+
+.reg-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.45);
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.2s ease;
+}
+
+.reg-modal {
+  width: 480px;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  animation: slideUp 0.25s ease;
+}
+
+/* HEADER */
+
+.reg-modal-header {
+  background: linear-gradient(135deg, #2f3b63, #1f2747);
+  color: white;
+  padding: 20px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reg-modal-header h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.reg-modal-header p {
+  margin: 4px 0 0 0;
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+.reg-close-btn {
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  transition: 0.2s;
+}
+
+.reg-close-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* BODY */
+
+.reg-modal-body {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.reg-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.reg-input-group label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.reg-input-group input {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.reg-input-group input:focus {
+  outline: none;
+  border-color: #2f3b63;
+  box-shadow: 0 0 0 3px rgba(47, 59, 99, 0.15);
+}
+
+/* FOOTER */
+
+.reg-modal-footer {
+  padding: 20px 25px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  background: #f9fafb;
+}
+
+.reg-btn-cancel {
+  background: #e5e7eb;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.reg-btn-save {
+  background: #2f3b63;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.reg-btn-save:hover {
+  background: #1f2747;
+  transform: translateY(-1px);
+}
+
+/* ANIMACIONES */
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
